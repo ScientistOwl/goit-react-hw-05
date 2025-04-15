@@ -17,7 +17,7 @@ const MoviesPage = () => {
           {
             headers: {
               Authorization:
-                'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMDRhOTBlN2M5ODk1YmVlOTllYTRmNmU4Y2JmMWU4NCIsIm5iZiI6MTc0NDcyMzk4MC41NDksInN1YiI6IjY3ZmU2MDBjZDY0NWU0MWUwOTk5MjExZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ICB9jAh5v6fH9pZeMrS-zU6uQqEVLDw2JdRJCDmN7is',
+                'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYjhmZTEwNjYwMzgyNjg5YTQ1NTQ5NjcyZmVkMzgxMyIsIm5iZiI6MTc0NDczMjc3MS4yNjIsInN1YiI6IjY3ZmU4MjYzOWQxZjc3OGFiODk5NzhmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.80Ka56-n-f25fHF8xOM4Zlv9gHRIN2_s6E4g0zy9-dk',
             },
           },
         );
