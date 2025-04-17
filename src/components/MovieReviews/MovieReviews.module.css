@@ -1,13 +1,17 @@
-div {
-  padding: 1rem;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: #333;
+li {
+  margin-bottom: 15px;
+}
+
+strong {
+  color: #007bff;
 }
 
 p {
-  font-size: 1.2rem;
-  color: #666;
+  color: #333;
+  font-size: 1rem;
 }
