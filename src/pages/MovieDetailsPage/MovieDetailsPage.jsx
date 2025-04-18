@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import axios from 'axios';
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const location = useLocation();
+  const goBack = useRef(location?.state || '/movies');
   const [movieData, setMovieData] = useState(null);
 
   useEffect(() => {
@@ -35,7 +36,7 @@ const MovieDetailsPage = () => {
 
   return (
     <div>
-      <Link to={location.state?.from || '/movies'}>Go back</Link>
+      <Link to={goBack.current}>Go back</Link>
       <div>
         <h1>{movieData.title}</h1>
         <img

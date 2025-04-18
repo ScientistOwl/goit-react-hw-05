@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
+import MovieList from '../../components/MovieList/MovieList';
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -45,11 +46,7 @@ const MoviesPage = () => {
         <input type="text" name="search" placeholder="Enter movie name" />
         <button type="submit">Search</button>
       </form>
-      <ul>
-        {movies.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
-        ))}
-      </ul>
+      <MovieList movies={movies} />
     </div>
   );
 };
